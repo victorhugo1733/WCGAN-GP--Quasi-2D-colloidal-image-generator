@@ -1,2 +1,4 @@
 # WCGAN-GP-Imagenes-Coloidales
-Una WCGAN-GP (Wasserstein Conditional Generative Adversarial Network con Gradiente Penalizado) esta diseñada para la generación de imágenes de coloides tiene como objetivo crear representaciones visuales estadísticamente precisas de sistemas coloidales cuasi-2D.
+The Wasserstein Conditional Generative Adversarial Network with Gradient Penalty, abbreviated as WCGAN-GP, is a model developed by Walia, Tierney and McKeever in 2020 for data generation. The WCGAN-GP uses the Wasserstein loss along with the gradient penalty. This approach contributes to greater stability during training. In addition, it stands out for being a conditional GAN, which implies its ability to generate conditional data according to the input label.
+
+This repository hosts the implementation of WCGAN-GP and exemplifies its application by generating synthetic data from a specific data set (Images obtained through bright field video microscopy). It is worth noting that, in this context, WCGAN-GP has been adapted to generate statistically equivalent quasi-2D colloidal images.
