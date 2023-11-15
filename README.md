@@ -9,6 +9,13 @@ Note that the code was executed in Google Colab and the images with which it was
 
 ![example](https://github.com/victorhugo1733/WCGAN-GP-Quasi-2D-colloidal-image-generator/blob/main/Generated%20images/noise_image_Iteration_0.png)
 
+Then we establish the number of times we need and wait for the script to compile. After this, we can run the "interpolate_class" function to interpolate between the classes. defining the classes in "start_class" and "end_class" the allowed values are 0,1,2,3 and 4 where 0 corresponds to the area fraction of 0.05, 1 corresponds to the area fraction of 0.15 and successively up to the number 4 which corresponds to the area fraction 0.45. In the special case where "start_class" and "end_class" are set to the same value, no interpolation will be performed, the function will only generate new images of the selected concentration as in the following example:
+
+![example2](https://github.com/victorhugo1733/WCGAN-GP-Quasi-2D-colloidal-image-generator/blob/main/Generated%20images/area_fraction_0.25.jpg)
+
+Finally you can use the last lines of the code to generate images of the concentrations you want, whether they are interpolated images or not. The following image was generated with WCGAN-GP for an area fraction of 0.45
+
+![example3](https://github.com/victorhugo1733/WCGAN-GP-Quasi-2D-colloidal-image-generator/blob/main/Generated%20images/area_fraction_0.45.jpg)
 
 ## Load the Model
 Once the model is trained we use the command “model.save_weights” it is a function that is used to save the weights of a neural network model in a file. Saving the model can help save the progress of a training model so that training can be resumed at a later date without having to start from scratch. To do this, you also need to save the discriminator and the generator. The “discriminator.save” command saves the discriminator architecture to a file. The “generator.save” command is used to save the generator architecture to a file. These commands can be useful for sharing models with other users or for using a trained model in different applications.
